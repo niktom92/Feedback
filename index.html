@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		
+	</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<div class="form__box d-flex justify-content-center">
+		<form id="feedback">
+		 <div class="mb-3">
+     <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationCustom01" name="name_input" placeholder="First name" value="" required>
+    <div class="valid-feedback">
+  </div>
+  	 <div class="mb-3">
+     <label for="validationCustom02" class="form-label">Phone</label>
+    <input type="text" onkeypress="validate(event)" class="form-control" id="validationCustom02" name="phone" placeholder="+79990001234" value="" required>
+    <div class="valid-feedback">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email_input" required>
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+ 
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" name="acceptance" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary w-100">Submit</button>
+</form>
+	</div>
+
+
+
+
+<script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+<script src="js.js"></script>
+</body>
+</html>
